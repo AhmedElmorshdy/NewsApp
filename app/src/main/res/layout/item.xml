@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        android:id="@+id/cardview"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/mainheading"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="Main Heading display here .."
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:text="Main Content"
+                    android:id="@+id/content"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageview"
+                    android:src="@drawable/ic_launcher_background"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Ahmed"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:id="@+id/author"
+                android:textColor="@color/purple_200"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_marginTop="25dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Published At"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
